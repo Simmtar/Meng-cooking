@@ -1,0 +1,88 @@
+.Classify{
+	width:100%;
+	height:100%;
+	background:white;
+	font-size:.12rem;
+	header{
+		width:100%;
+		height:.42rem;
+		border-bottom:.01rem solid #efefef;
+		padding:0.08rem .1rem;
+		input{
+			border:none;
+			background:#f7f7f7;
+			width:100%;
+			height:100%;
+			border-radius:.07rem;
+			color:#999;
+			font-size:.13rem;
+			text-align:center;
+		}
+	}
+	section{
+		width:100%;
+		height:5.2rem;
+		@include flexbox();
+		.secLeft{
+			width:.93rem;
+			height:100%;
+			background:#f6f6f6;
+			li{
+				width:100%;
+				height:.45rem;
+				@include flexbox();
+				@include flex-direction(column);
+				@include justify-content(center);
+				@include align-items(center);
+			}
+		}
+		.secRight{
+			@include flex(1);
+			height:100%;
+			div{
+				margin:.14rem .07rem;
+				border-left:.03rem solid #ffd40d;
+				font-size:.13rem;
+				padding-left:.17rem;
+			}
+			.lis{
+				width:100%;
+				@include flexbox();
+				@include flex-wrap(wrap);
+				// @include justify-content(center);
+				li{
+					width:33%;
+					height:1.06rem;
+					a{
+						width:100%;
+						height:100%;
+						@include flexbox();
+						@include flex-direction(column);
+						@include justify-content(center);
+						@include align-items(center);
+						color:#333;
+						img{
+							width:.58rem;
+							height:.58rem;
+							margin-bottom:.04rem;
+						}
+						span{
+							font-size:.12rem;
+						}
+					}
+					
+					
+					
+				}
+			}
+
+		}
+	}
+	.home{
+		color:#878787 !important;
+	}
+	.clas{
+		color:#feb900;
+	}
+
+}

@@ -1,0 +1,130 @@
+.information{
+	width:100%;
+	height:100%;
+	background:#f9fafc;
+	@include flexbox();
+	@include flex-direction(column);
+	header{
+		width:100%;
+		height:.42rem;
+		padding:.14rem;
+		border-bottom:.01rem solid #efefef;
+		font-size:.16rem;
+		background:white;
+		@include flexbox();
+		@include justify-content(center);
+		@include align-items(center);
+		span{
+			@include flex(1);
+			@include flexbox();
+			@include justify-content(center);
+			@include align-items(center);
+			color:#4d4f4c;
+		}
+	}
+	.tabs{
+		width:100%;
+		height:.37rem;
+		@include flexbox();
+		@include align-items(center);
+		background:white;
+		border-bottom:.01rem solid #efefef;
+		li{
+			@include flex(1);
+			height:100%;
+			font-size:.12rem;
+			color:#4d4f4c;
+			padding-left:.37rem ;
+			img{
+				width:.01rem;
+				height:.19rem;
+				float:right;
+				margin-top:.09rem;
+			}
+			a{
+				display:block;
+				float:left;
+				margin:0 auto;
+				line-height:.37rem;
+				color:#4d4f4c;
+				height:100%;
+			}
+		}
+		li.active a{
+			border-bottom:.02rem solid #ffd40d;
+		}
+	}
+	.swiper-container{
+		width:100%;
+		border-top:0;
+		height:100%;
+		.swiper-slide{
+			width:50%;
+			background:none;
+			color:#373737;
+			.content-slide{
+				width:100%;
+				height:100%;
+				@include flexbox();
+				@include flex-direction(column);
+				@include align-items(center);
+				.slideImg{
+					width:2.57rem;
+					height:2.41rem;
+					margin-bottom:.16rem;
+				}
+			}
+			
+		}
+
+	}
+	.home{
+		color:#878787 !important;
+	}
+	.inf{
+		color:#feb900;
+	}
+	.radio{
+		width:100%;
+		height:100%;
+		ul{
+			width:100%;
+			height:100%;
+			background:white;
+			li{
+				padding:.18rem .1rem;
+				border-bottom:.01rem solid #f1f1f1;
+				@include flexbox();
+				@include flex-direction(column);
+				@include justify-content(center);
+				div{
+					@include flexbox();
+					.img{
+						width:.4rem;
+						height:.4rem;
+						margin-right:.1rem;
+					}
+					dl{
+						margin-bottom:.05rem;
+						dt{
+							color:#976e3f;
+						}
+						dd{
+							color:#9e9e9e;
+							font-size:.12rem;
+						}
+					}
+					
+				}
+				a{
+					display:block;
+					margin-top:.05rem;
+					color:#976e3f; 
+				}
+			}
+		}
+	}
+	
+	
+}
+		

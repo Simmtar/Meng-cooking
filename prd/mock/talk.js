@@ -1,0 +1,19 @@
+module.exports = {
+		"talk":[
+				{
+					"username":"zhangsan",
+					"data":"三天前",
+					"content":"111111111111111111"
+				},
+				{
+					"username":"lisi",
+					"data":"4天前",
+					"content":"22222222222222"
+				},
+				{
+					"username":"fhh",
+					"data":"5天前",
+					"content":"333333333333333"
+				}
+			]
+}

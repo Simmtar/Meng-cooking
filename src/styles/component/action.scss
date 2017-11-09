@@ -1,0 +1,26 @@
+.action{
+	@include flexbox();
+	@include flex-direction(column);
+	@include justify-content(space-between);
+	@include align-items(center);
+
+	img{
+		width:2.5rem;
+		height:2.21rem;
+		margin-top:.3rem;
+	}
+
+	div{
+		margin-top:.2rem;
+	}
+
+	button{
+		width:.92rem;
+		height:.26rem;
+		border-radius:.2rem;
+		background:#ffd40c;
+		color:#976c41;
+		border:none;
+		margin:.51rem 0;
+	}
+}
